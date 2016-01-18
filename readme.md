@@ -1,7 +1,8 @@
 # Laravel 5 Scaffold Generator
 
+See Tag 1.0.3 for Laravel 5.1
 
-Hi, this is a scaffold generator for Laravel 5.
+This is a scaffold generator for Laravel 5.2
 
 
 
