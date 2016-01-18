@@ -14,6 +14,7 @@ use Laralib\L5scaffold\Makes\MakeSeed;
 use Laralib\L5scaffold\Makes\MakeView;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Input\InputArgument;
+use Illuminate\Foundation\Composer;
 
 class ScaffoldMakeCommand extends Command
 {
@@ -66,7 +67,7 @@ class ScaffoldMakeCommand extends Command
      * @param Filesystem $files
      * @param Composer $composer
      */
-    public function __construct(Filesystem $files, $composer)
+    public function __construct(Filesystem $files, Composer $composer)
     {
         parent::__construct();
 
