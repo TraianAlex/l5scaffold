@@ -5,7 +5,6 @@ namespace Laralib\L5scaffold\Commands;
 use Illuminate\Console\AppNamespaceDetectorTrait;
 use Illuminate\Console\Command;
 use Illuminate\Filesystem\Filesystem;
-use Illuminate\Foundation\Composer;
 use Laralib\L5scaffold\Makes\MakeController;
 use Laralib\L5scaffold\Makes\MakeLayout;
 use Laralib\L5scaffold\Makes\MakeMigration;
@@ -67,7 +66,7 @@ class ScaffoldMakeCommand extends Command
      * @param Filesystem $files
      * @param Composer $composer
      */
-    public function __construct(Filesystem $files, Composer $composer)
+    public function __construct(Filesystem $files, $composer)
     {
         parent::__construct();
 
