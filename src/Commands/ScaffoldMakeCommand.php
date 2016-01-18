@@ -14,7 +14,7 @@ use Laralib\L5scaffold\Makes\MakeSeed;
 use Laralib\L5scaffold\Makes\MakeView;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Input\InputArgument;
-use Illuminate\Foundation\Composer;
+use Illuminate\Support\Composer;
 
 class ScaffoldMakeCommand extends Command
 {
