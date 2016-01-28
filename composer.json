@@ -1,13 +1,13 @@
 {
-  "name": "laralib/l5scaffold",
-  "description": "Extend Laravel 5's generators scaffold.",
+  "name": "alnutile/l5scaffold",
+  "description": "Extend Laravel 5's generators scaffold. Thanks to the base of this laralib by fernandobritofl@gmail.com!",
   "keywords": ["laravel", "generators", "scaffold" , "laravel5"],
   "license": "MIT",
   "minimum-stability": "dev",
   "authors": [
     {
-      "name": "Fernando Brito",
-      "email": "fernandobritofl@gmail.com"
+      "name": "Alfred Nutile",
+      "email": "alfrednutile@gmail.com"
     }
   ],
   "require": {
