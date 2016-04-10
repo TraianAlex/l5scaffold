@@ -17,8 +17,7 @@ Setup your composer.json
 ```
   "require": {
     "php": ">=5.5.9",
-    "laravel/framework": "5.1.*",
-    "laralib/l5scaffold": "dev-master"
+    "laravel/framework": "5.1.*"
   },
   "repositories": [
     {
@@ -28,10 +27,18 @@ Setup your composer.json
   ],
 ```
 
+You might have to set 
+
+```json
+"minimum-stability": "dev"
+```
+
+At the bottom of your composer.json
+
 then
 
 ~~~
-composer update
+composer require "laralib/l5scaffold":"dev-master"
 ~~~
 
 ### Step 2: Add the Service Provider
@@ -41,9 +48,6 @@ Since we only want this on dev go to `app/Providers/AppServiceProvider.php`
 ```
     public function register()
     {
-        $this->app->singleton('App\Services\ResponseInterface', function ($app) {
-            return new \App\Services\ResponseService;
-        });
 
         if ($this->app->environment() == 'local') {
             $this->app->register('Laralib\L5scaffold\GeneratorsServiceProvider');
